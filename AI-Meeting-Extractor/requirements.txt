@@ -1,0 +1,9 @@
+streamlit
+pandas
+uploaded_file = st.file_uploader(
+    "Upload Meeting Transcript",
+    type=["txt"]
+)
+
+if uploaded_file:
+    transcript = uploaded_file.read().decode("utf-8")
